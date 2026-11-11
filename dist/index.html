@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#161817"><title>BolBill — Your voice, your bill</title>
+  <meta name="theme-color" content="#161817"><title>BillBoley — Your voice, your bill</title>
   <meta name="description" content="A simple voice-first kirana billing demo. Speak or type a Hinglish basket, review your receipt, and save the sale.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="./" aria-label="BolBill home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>bolbill<span class="demo-tag">DEMO</span></a>
+    <a class="brand" href="./" aria-label="BillBoley home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>BillBoley<span class="demo-tag">DEMO</span></a>
     <nav aria-label="Main navigation"><button class="nav-button active" data-view="sale">New bill</button><button class="nav-button" data-view="history">History <span id="history-count">0</span></button><button class="nav-button" data-view="products">Products</button></nav>
-    <div class="shop"><span class="shop-avatar">S</span><span>Sharma General Store<small>Demo catalogue · INR</small></span></div>
+    <a class="repo-button" href="https://github.com/rmdir-sys32/billboley" target="_blank" rel="noopener noreferrer">GitHub</a>
   </header>
   <main>
     <section id="sale-view" class="view">
@@ -37,7 +37,7 @@
             <div id="bill-items"></div>
             <div class="receipt-total"><div><span>Subtotal</span><span id="subtotal">₹0.00</span></div><div class="grand-total"><span>Total</span><strong id="total">₹0.00</strong></div><p>No tax added in this demo.</p></div>
             <div class="payment-section"><label for="payment">Payment recorded as</label><select id="payment"><option value="Cash">Cash</option><option value="UPI">UPI · merchant confirmed</option><option value="Unpaid">Unpaid</option></select></div>
-            <div class="receipt-footer"><p>Thank you. Phir milenge!</p><div class="barcode" aria-hidden="true"></div><span>MADE WITH YOUR VOICE · BOLBILL</span></div>
+            <div class="receipt-footer"><p>Thank you. Phir milenge!</p><div class="barcode" aria-hidden="true"></div><span>MADE WITH YOUR VOICE · BILLBOLEY</span></div>
           </article>
           <div class="receipt-actions"><button id="undo" class="secondary" disabled>Undo</button><button id="save-bill" class="primary" disabled>Confirm & save <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></button></div>
           <div class="receipt-under"><span id="save-hint">Check items and quantities before saving.</span><button id="print-bill" class="quiet">Print receipt</button></div>
@@ -47,7 +47,7 @@
     <section id="history-view" class="view" hidden><div class="simple-heading"><h1>Your saved bills.</h1><p>Stored in this browser only. Clearing browser data removes them.</p></div><div id="history-list"></div></section>
     <section id="products-view" class="view" hidden><div class="simple-heading"><h1>A small shop. Familiar names.</h1><p>Demo prices, not live market prices. Tap any product to add its default quantity.</p></div><div id="catalogue" class="catalogue"></div></section>
   </main>
-  <footer class="app-footer"><span>bolbill</span><span>Less typing. More dukandari.</span><span>Prototype · saved on this device</span></footer>
+  <footer class="app-footer"><span>BillBoley</span><span>Less typing. More dukandari.</span><span>Prototype · saved on this device</span></footer>
   <script src="billing.js"></script><script src="app.js"></script>
 </body>
 </html>
